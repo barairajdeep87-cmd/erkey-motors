@@ -1,0 +1,728 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head></head><body class="bg-background text-on-background selection:bg-primary selection:text-white">
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Erkey Motors | High-Performance Electric Delivery Bikes</title>
+<meta content="Purpose-built electric delivery bikes for high-efficiency commercial fleets. Experience the future of last-mile delivery with Erkey Motors." name="description">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-surface-variant": "#414754",
+                "inverse-surface": "#2f3131",
+                "surface-variant": "#e2e2e2",
+                "tertiary-container": "#767474",
+                "primary": "#0059bb",
+                "surface-container-highest": "#e2e2e2",
+                "on-primary-fixed": "#001a41",
+                "on-tertiary": "#ffffff",
+                "surface-bright": "#f9f9f9",
+                "primary-fixed-dim": "#adc7ff",
+                "background": "#f9f9f9",
+                "surface": "#f9f9f9",
+                "surface-container-high": "#e8e8e8",
+                "on-secondary": "#ffffff",
+                "outline": "#717786",
+                "on-background": "#1a1c1c",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "tertiary-fixed": "#e5e2e1",
+                "on-error": "#ffffff",
+                "surface-tint": "#005bc0",
+                "inverse-primary": "#adc7ff",
+                "primary-fixed": "#d8e2ff",
+                "on-primary-container": "#fefcff",
+                "on-primary": "#ffffff",
+                "secondary": "#006688",
+                "on-surface": "#1a1c1c",
+                "surface-dim": "#dadada",
+                "surface-container-lowest": "#ffffff",
+                "on-primary-fixed-variant": "#004493",
+                "secondary-fixed": "#c2e8ff",
+                "on-secondary-fixed-variant": "#004d67",
+                "surface-container": "#eeeeee",
+                "on-tertiary-container": "#f7feff",
+                "secondary-fixed-dim": "#75d1ff",
+                "outline-variant": "#c1c6d7",
+                "surface-container-low": "#f3f3f3",
+                "tertiary": "#5d5c5b",
+                "error": "#ba1a1a",
+                "inverse-on-surface": "#f1f1f1",
+                "error-container": "#ffdad6",
+                "on-secondary-fixed": "#001e2b",
+                "on-tertiary-fixed": "#1c1b1b",
+                "on-tertiary-fixed-variant": "#474646",
+                "secondary-container": "#00c1fd",
+                "primary-container": "#0070ea",
+                "on-secondary-container": "#004b65",
+                "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "stack-sm": "8px",
+                "stack-lg": "32px",
+                "container-max": "1280px",
+                "section-padding": "80px",
+                "gutter": "24px",
+                "stack-md": "16px",
+                "margin-desktop": "64px",
+                "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                "button-label": ["Hanken Grotesk"],
+                "caption": ["Hanken Grotesk"],
+                "body-lg": ["Hanken Grotesk"],
+                "display-lg": ["Sora"],
+                "body-md": ["Hanken Grotesk"],
+                "nav-label": ["Hanken Grotesk"],
+                "headline-md": ["Sora"],
+                "headline-lg-mobile": ["Sora"],
+                "headline-lg": ["Sora"]
+            },
+            "fontSize": {
+                "button-label": ["14px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "nav-label": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .glass-nav {
+            background: rgba(249, 249, 249, 0.1);
+            backdrop-filter: blur(20px);
+            transition: background 0.4s ease, border-color 0.4s ease, transform 0.3s ease-in-out;
+        }
+        
+        .glass-nav.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            border-bottom: 1px solid rgba(226, 226, 226, 0.5);
+        }
+
+        .nav-hidden {
+            transform: translateY(-100%);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .glass-nav {
+                transition: background 0.4s ease, border-color 0.4s ease !important;
+            }
+            .nav-hidden {
+                transform: none !important;
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 2rem;
+        }
+
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: 2rem;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+
+        .primary-btn {
+            background: linear-gradient(135deg, #0059bb 0%, #00c1fd 100%);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .primary-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px -5px rgba(0, 193, 253, 0.4);
+        }
+
+        .usp-card {
+            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .usp-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 89, 187, 0.1);
+            border-color: #0059bb;
+        }
+
+        .parallax-container {
+            overflow: hidden;
+        }
+        .parallax-bg {
+            transition: transform 0.1s linear;
+            will-change: transform;
+        }
+
+        /* Testimonial Track */
+        .testimonial-track {
+            display: flex;
+            animation: slideTestimonials 40s linear infinite;
+        }
+        @keyframes slideTestimonials {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .testimonial-track:hover {
+            animation-play-state: paused;
+        }
+
+        /* Megamenu Transitions */
+        .megamenu {
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .group:hover .megamenu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+<!-- Header Section -->
+<header class="fixed top-0 left-0 w-full z-50 h-20 transition-all duration-300 glass-nav bg-white" id="main-header">
+<nav class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full flex justify-between items-center">
+<a class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface" href="#"><div class="flex items-center gap-4"><img alt="Erkey Motors Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSIHcnqzNyujXQoVIHxSW-na5F5ieMrfWI534pMLMjahewXgZYgg6GkCsZTgi7ejiWixH5Gzqb0u7JMcG9_gEM0hqPwgCX5fTDOXzRVu1TgupN1SDL-u_8k0zRN9GwQRfzUmq6gmRB4uQUGsiJLOx8rViIicfOoF5J-4A-fSVtYZ8JyR5v-QbcVuGeeE2KMHsPjwiphXITvkTUW6ZRPZk-aXtZ54puiqwQlxovUoz9KWykQILQFLFINBu7ZgODHqaHB5xVs3O-qevZ"><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Erkey Motors</span></div></a>
+<div class="hidden md:flex items-center space-x-10 h-full">
+<div class="group h-full flex items-center">
+<a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors flex items-center gap-1" href="#products">
+        PRODUCTS
+        <span class="material-symbols-outlined text-[14px]">expand_more</span>
+</a>
+<!-- Megamenu -->
+<div class="megamenu absolute top-full left-0 w-full bg-inverse-surface/95 backdrop-blur-xl border-t border-white/5 py-12 px-margin-desktop shadow-2xl">
+<div class="max-w-container-max mx-auto">
+<div class="flex justify-between items-center mb-8 border-b border-white/10 pb-4">
+<span class="text-white/50 font-nav-label text-nav-label uppercase tracking-widest">Select your model</span>
+<div class="flex gap-4">
+<button class="p-2 rounded-full border border-white/10 text-white hover:bg-white/10 transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 rounded-full border border-white/10 text-white hover:bg-white/10 transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-gutter"><div class="col-span-4 flex justify-center"><a class="group/card block bg-white/5 hover:bg-white/10 rounded-xl p-6 transition-all duration-300 max-w-md w-full" href="#"><span class="block font-headline-md text-headline-md text-white mb-4">Erkey S93</span><div class="aspect-[16/9] mb-6 overflow-hidden flex items-center justify-center"><img alt="Erkey S93" class="w-full h-full object-contain group-hover/card:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5pTj08T-VWfBzHihyVrp4on5EKfiL6tFKl1lSCsEldHhmsR8g8A7hPphpgHUJUZIIoWdIzyXWlRslaoxJ9H-A2dnxDFGDD2VYeZmc7UVYe6mhSjeJtP9O4rR_n7Z6WO3g-lW_ySaRnc-8UE_8jFuHCw126DXXKyFx90FyqT3bcenH3F1ris2qS_fynGL69i9pu_fBDck8eMFPRkrIZJWZheIuKbRCpwbtTN0aozEKhSWiGsdRYK9qfEBhpmoAp6EgWTP7OTYxnsDG"></div><div class="flex justify-between items-center text-white/60"><span class="text-caption font-caption">New Model</span><span class="material-symbols-outlined text-[20px]">keyboard_arrow_down</span></div></a></div></div>
+</div>
+</div>
+</div>
+<a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors" href="#features">FEATURES</a>
+<a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors" href="#about">ABOUT US</a><a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors" href="#blog">BLOG</a><a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors" href="#blog">NEWS</a>
+<a class="font-nav-label text-nav-label text-on-surface hover:text-primary transition-colors" href="#contact">CONTACT</a>
+</div>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden min-h-screen">
+<!-- Video Background -->
+<div class="absolute inset-0 bg-black z-0">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<video autoplay loop muted playsinline class="w-full h-full object-cover opacity-70" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuBizVBeQLoJfdXFVpe5UG1Hx5XPrpI0ubDh3jJ1hkhjGvGxTHAIRT27SueQ9d9eaXw341oOEeFChtFyJa65QZstSmn3rphZ6tR_sW0qlCTLjBpZ3zn453PeZ4BW_wj5xpLioZHiFf_5S8jRH9hSDwauPmjulbz35iqkSRhKVOcNh1v6BXo7eKVECCfEPuCWsUWFZx5wIl35f2SdY4gCcMqpTvE7ABvNLYFNv4QjDGxYIZma5G-2aSZrrSDQOcGMhzPhWytoQWh9rB0K">
+<source src="hero-bg.mp4" type="video/mp4">
+</video>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<h1 class="text-white font-display-lg text-4xl md:text-display-lg mb-stack-md reveal active">
+                The Future of Last-Mile Delivery.
+            </h1>
+<p class="text-white/80 font-body-lg text-body-lg mb-stack-lg max-w-2xl mx-auto reveal active" style="transition-delay: 200ms;">
+                Purpose-built electric delivery bikes for high-efficiency commercial fleets. Engineered for reliability, range, and operational excellence.
+            </p>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center reveal active" style="transition-delay: 400ms;">
+<a href="stitch_erkey_motors_fleet_showcase (3)/code.html" class="primary-btn text-white px-10 py-4 rounded-full font-button-label text-button-label uppercase tracking-widest transition-all inline-block text-center">
+                    Explore Products
+                </a>
+<a href="stitch_erkey_motors_fleet_showcase (2)/code.html" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-10 py-4 rounded-full font-button-label text-button-label uppercase tracking-widest transition-all inline-block text-center">
+                    Book a Demo
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-white text-3xl">expand_more</span>
+</div>
+</section>
+<!-- Features Video Section -->
+<section class="py-section-padding bg-surface" id="features">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div class="order-2 lg:order-1 reveal active">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-stack-lg">
+                    Engineered for the Grind
+                </h2>
+<ul class="space-y-stack-md">
+<li class="flex items-start gap-stack-md p-6 bg-white rounded-xl shadow-sm border border-surface-variant/20 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">battery_charging_full</span>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Swappable Battery</h4>
+<p class="text-on-surface-variant font-body-md">Less than 60 seconds downtime. Switch batteries and stay on the road for triple shifts.</p>
+</div>
+</li>
+<li class="flex items-start gap-stack-md p-6 bg-white rounded-xl shadow-sm border border-surface-variant/20 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">package_2</span>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">High Payload</h4>
+<p class="text-on-surface-variant font-body-md">Reinforced chassis built to carry up to 150kg of commercial cargo effortlessly.</p>
+</div>
+</li>
+<li class="flex items-start gap-stack-md p-6 bg-white rounded-xl shadow-sm border border-surface-variant/20 hover:border-primary/30 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<div>
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Commercial Grade</h4>
+<p class="text-on-surface-variant font-body-md">IP67 rated components and military-grade suspension for all-weather urban terrain.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="order-1 lg:order-2 relative rounded-3xl overflow-hidden aspect-video shadow-2xl reveal active" style="transition-delay: 200ms;">
+<video id="grind-video" class="w-full h-full object-cover" poster="https://lh3.googleusercontent.com/aida-public/AB6AXuClwg7-obJvSCZeKIjSlnB9OWjOMpJ_113UdJT3T3kmmsC7iVr6NDzUs-fYkHUmYkyKdZrhefVPbpN_fkvj49hOp6hOuitGBxg7LOtVCO2hEvneo9gV8LKc_-Lc1DTDdygVOxIPoQLfQxvtj4jnbs_Npa7I5TlLN-ZMUe0-BQafd-OYQR-OzVRpLzRhkj3i-iqNh0lG-V72ww-xjjyg9mkpF7uy_aJ7pSOQEuBajsIStftbgUqLxz_QZmHzT5KwnmDqgeJJ_VogiFS5">
+<source src="engineered-grind.mp4" type="video/mp4">
+</video>
+<div id="video-overlay" class="absolute inset-0 bg-primary/10 flex items-center justify-center cursor-pointer transition-opacity duration-300">
+<button class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center text-primary shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Erkey? (USP Grid) -->
+<section class="py-section-padding bg-surface-container-low" id="why">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface reveal active">Why Erkey?</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto mt-stack-sm reveal active" style="transition-delay: 100ms;">Revolutionizing last-mile logistics with Indian innovation and global standards.</p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-gutter auto-rows-[240px]">
+<!-- Card 1: Purpose-built (Large Focal Point) -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-high p-8 rounded-2xl shadow-sm flex flex-col justify-end relative overflow-hidden reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out">
+<div class="absolute inset-0 z-0">
+<img alt="Purpose-built Delivery" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACz9uLcDKepDG5R9NZ7p3gUolyz7xz_IYmb5Zhb9UBbhgfnnQXuEsB99ExilRelOuApPmRCllUCV0yg7elZYAxFzPxJKBUmbKRm4ckMW5-MRQ9s5KUznllw7e5LJyqyS16OBPENd0Za-OrcQEOEcbpeuLCz0kQ7GEH6QFsXhWKyI32NN24eIrsZnvUYHFBS6r93CKXPGrNCypwFb59u-Nm_h_p1e_xznNdaGZaSdHB-oYYX0Gcfg4aD3x0ewrMlsrZ8xDWvPN1nEa4">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Purpose-built Delivery</h3>
+<p class="text-white/80 font-body-md mb-6">Every weld and component is optimized for the specific stresses of multi-stop delivery routes.</p>
+<a class="font-button-label text-white border-b border-white/30 w-fit pb-1 hover:border-white transition-all hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+</div>
+<!-- Card 2: Lower Operating Cost (Medium) -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-low p-8 rounded-2xl shadow-sm flex flex-row items-center gap-6 reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out" style="transition-delay: 100ms;">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md mb-2">Lower Operating Cost</h3>
+<p class="text-on-surface-variant font-body-md mb-4">Reduce your delivery costs by up to 80% compared to traditional fuel-based fleets.</p>
+<a class="font-button-label text-primary border-b border-primary/30 w-fit pb-1 hover:border-primary transition-all hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+<div class="w-1/3 aspect-square rounded-xl overflow-hidden">
+<img alt="Lower Operating Cost" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLtkUGagF46WwQ6ftrkF8OC3HWYK_qR3hhlQkxqrR2vFE44OfvVlvL4fRcbR2hjyLBvLsBDrNkUWNiQp9Ke72IPFKU0DU-JBEvZbPrTBPz1TAmTGKXcvL6MZbhNnKHhAx54C35rSRXmbFnnH_R6JxSrLKp-QEoshPN8cLs0E0Xm64YQykfZrZDXIJJi4ZaLQ_2umHUAMJIOaDsY3n-F02TIeXiiP7nOpprbAtQlOcoXQfBGsX49j5g0IAbfL">
+</div>
+</div>
+<!-- Card 3: High Reliability (Medium) -->
+<div class="md:col-span-2 md:row-span-1 bg-white p-8 rounded-2xl shadow-sm flex flex-row items-center gap-6 reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out" style="transition-delay: 200ms;">
+<div class="w-1/3 aspect-square rounded-xl overflow-hidden">
+<img alt="High Reliability" class="w-full h-full object-cover hover:scale-110 transition-transform duration-300 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLv2zgoj04ChgyRAvXEos6gjojD53Nm0mHhmRuDMwBrKD3V4GFo_UPSnvB51cHN2a_dVTNjRV7uZeMQu90aDwWwotGtrEGTk8Jm8eq085IisGnFwYAgIHrhx68G-3tD-WlgTJMzIFUQYrqRTUnvb8Xz7AxBFreUgqTFGnsw7Q2P6ZVFkXKK7dsUmVoDv7zSPKd6u-u_VqfHh8p_Wj5W3yfz-aYu77HjL4y3eCea_zJFsOAAAnZT1QczztUrK">
+</div>
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md mb-2">High Reliability</h3>
+<p class="text-on-surface-variant font-body-md mb-4">Low maintenance brushless motors and high-cycle life batteries ensure maximum uptime.</p>
+<a class="font-button-label text-primary border-b border-primary/30 w-fit pb-1 hover:border-primary transition-all hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+</div>
+<!-- Card 4: Fast Battery Swapping (Small) -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-high p-6 rounded-2xl shadow-sm flex flex-col reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out" style="transition-delay: 300ms;">
+<h3 class="font-headline-md text-body-lg font-bold mb-2">Fast Battery Swapping</h3>
+<p class="text-on-surface-variant font-body-md mb-4 text-sm flex-grow">Proprietary swap mechanism designed for rapid turnarounds.</p>
+<a class="font-button-label text-primary border-b border-primary/30 w-fit pb-1 hover:border-primary transition-all text-sm hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+<!-- Card 5: Made in India (Small with Background) -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-low rounded-2xl shadow-sm flex flex-col relative overflow-hidden reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out" style="transition-delay: 400ms;">
+<img alt="Made in India" class="absolute inset-0 w-full h-full object-cover opacity-20 hover:scale-110 transition-transform duration-300 ease-in-out" src="https://lh3.googleusercontent.com/aida/AP1WRLv2GreEL2d8GG1Q9wyjoLQvS0z3yGGaWWpVv5Ge3ADfxX5UulKCqQ7KCqCB6d8734vbOLqQUfI2bGM96Os5_ulGyAAMLTdrr3oCVuRDaiC_Nxv9WorDaGpbFmoz3hQ5qhHcj9NSTjovaSj6jIJE8hTGTWPtkeGqEOFyrmx8SpCPMk0voyI_ItEbeqRO24350scPK5y-VG1CfOyOjbYFdm8M0ZwBeulmJ208yZ5Fd00jizJFLfJ1yF-KZYSX">
+<div class="relative z-10 p-6 flex flex-col h-full">
+<h3 class="font-headline-md text-headline-md mb-2">Made in India</h3>
+<p class="text-on-surface-variant font-body-md mb-4">Designed and manufactured locally, ensuring robust supply chains.</p>
+<a class="font-button-label text-primary border-b border-primary/30 w-fit pb-1 hover:border-primary transition-all mt-auto hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+</div>
+<!-- Card 6: Fleet Ready (Small) -->
+<div class="md:col-span-1 md:row-span-1 bg-white p-6 rounded-2xl shadow-sm flex flex-col reveal active hover:scale-[1.02] hover:shadow-xl transition-all duration-300 ease-in-out" style="transition-delay: 500ms;">
+<div class="mb-4">
+<img alt="Fleet Ready" class="w-12 h-12 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLudhKjouDQ5lhm28hgCi5ygUab9rwkwNqndSmjszR6qYkcgutg6JiUwK39jeMCg3_lDtsAFsafk59rbUo3xHGM_KS9LgKyKTde6DfWhIyYX1c9yoR0_3M-eu3JATVhP8iuKpMJONc8Kp09TFeanQyA0NfoHz_0Q1R-ubJeyYiijeaqsEnUK5QS89QZUscTAu8qj8b0fZYrquMLCI8QpkytN1hoJ3UpneU-KSs33txF8oQZDi7iXhNQq-FII">
+</div>
+<h3 class="font-headline-md text-body-lg font-bold mb-2">Fleet Ready</h3>
+<p class="text-on-surface-variant font-body-md text-sm mb-4">Integrated IoT for real-time tracking and analytics.</p>
+<a class="font-button-label text-primary border-b border-primary/30 w-fit pb-1 hover:border-primary transition-all text-sm hover:gap-2 hover:text-primary duration-300" href="#">Learn more</a>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-section-padding bg-surface overflow-hidden">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Trusted by the World's Leading Fleets</h2>
+<div class="flex justify-center gap-1 text-primary mb-10">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+</div>
+<div class="relative flex overflow-hidden">
+<div class="testimonial-track gap-gutter px-4">
+<!-- Testimonial Items -->
+<div class="flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-sm border border-surface-variant/30">
+<p class="font-body-md text-on-surface-variant mb-6 italic">"The battery swapping system has completely eliminated our range anxiety. Our riders are doing 20% more deliveries per shift."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container" data-alt="Professional headshot of a logistics manager in a high-tech office environment. Soft, diffused lighting, shallow depth of field. Modern, clean aesthetic with blue and white tones." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAIegjK_v6mFR21Yaojl6rM2Coes5K-FLCVQxKtB7sns3FpbbLdeJ-5W-GQfkXwsZTmYk3rIl96Rc8c8LAmFisWoBRivL_8tX7M_MvV9lTW_gOY9jh6OOqyidXt2IyawFcoVHJXaVcoVJ2YMzhtjQJsZy81lT8EsHXCISMnRVDxNKyLoc6WVwHge823qtG3LsgmzlneEThPfvh7BwIaWBN9Ks2OkwpuYsTENKRi-neLHGPbEboc_6I3cAH5My5YowHOopyDscB8zDOL&quot;);"></div>
+<div>
+<h4 class="font-button-label">Rajesh Mehta</h4>
+<p class="text-caption text-outline">Fleet Manager, Swift Logistics</p>
+</div>
+</div>
+</div>
+<!-- Duplicate for seamless scroll -->
+<div class="flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-sm border border-surface-variant/30">
+<p class="font-body-md text-on-surface-variant mb-6 italic">"Erkey Motors bikes are tanks. We've seen significantly lower downtime compared to other electric models we've tried."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container" data-alt="Portrait of a female business executive in the green energy sector, looking confident and professional. The background is a modern glass-walled office with urban sunlight. Colors are crisp and natural." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDAPSqxYjziidTITIKFClecUxW42owvU_gqBxErZcOqUcYUWEFAMa9aVPFJA1U5BBR62jjaiijG_-REpfUny7VFazZXPa4rGl4DjtOuAcEf1UcMwt3qQ1jcdLMz4xgTzI9Fy-u8cKKS2hZIf86dLtTqPgkofNdHj7n71pYMcdF01x5F4xQvv39mmbTJNq5WxfeU76WrAo8UIJGBmxg4r4QNEEEfKgI3PTXCcOPCPGZNYiIJhXStHrxecDkrrjykkF1x4CFVbdHlPg4V&quot;);"></div>
+<div>
+<h4 class="font-button-label">Sarah Collins</h4>
+<p class="text-caption text-outline">Operations Director, GreenPost</p>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-sm border border-surface-variant/30">
+<p class="font-body-md text-on-surface-variant mb-6 italic">"The best ROI we've seen in our 10 years of last-mile operations. Maintenance costs are practically non-existent."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container" data-alt="A smiling young entrepreneur standing next to a fleet of electric delivery bikes in a brightly lit industrial space. Cinematic lighting, professional color grading with blue accents." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBZVAcuwhnCD6bsNsFGfjS6eomhiCY06cv4fyqOqlOEmQE1rIpFGN3ZQAKZtq6aMVbrJ4wEW_xl45xjensDSVsatSjGX-XQAqdSjUQYflK21C0I7kYsrjIcaMG-kxmvh3dGrOOyL009US2OrdWXLLN_dhgvSb4RIlUwHZIUr9Ogs0wY7_jPWypQ3t-DRJEgME4vEM0Bi6QjleEh1SSsEfsZhbgFjcN6dAbeYYKLHboW9HuQ5lbOISEe0bt0OtkgNdZcFZzC9uAhC9-2&quot;);"></div>
+<div>
+<h4 class="font-button-label">Amit Varma</h4>
+<p class="text-caption text-outline">Founder, QuickDrop India</p>
+</div>
+</div>
+</div>
+<!-- Repeat for infinite look -->
+<div class="flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-sm border border-surface-variant/30">
+<p class="font-body-md text-on-surface-variant mb-6 italic">"The battery swapping system has completely eliminated our range anxiety. Our riders are doing 20% more deliveries per shift."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container" data-alt="Professional logistics headshot." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuD9Cd9AD99DkLrL-BguPsHlhjyBJvwdCFwxUplRtER5QA4iE5Ax1s682ucv9hvCFKZxU5xOhgNS6q3UnDOpiyjQ1_9pzzd9k6AnvXe9HkkBCc7GaO6ceq-OOHNx6L9Z3YD9cgPsxqf9ljbS4r6erRDz9zDU43BWTlb3aF-_AEfH-LtTXkIUEBcxagqVKHlcKjAOPZx83NEAXmkt1dA_uBvxbWFmPIaSOaxjlSigdsI_qEd9ZzCSDdnOvmy3t_b3AglGN2l-UD8FvndS&quot;);"></div>
+<div>
+<h4 class="font-button-label">Rajesh Mehta</h4>
+<p class="text-caption text-outline">Fleet Manager, Swift Logistics</p>
+</div>
+</div>
+</div>
+<div class="flex-shrink-0 w-[400px] bg-white p-8 rounded-2xl shadow-sm border border-surface-variant/30">
+<p class="font-body-md text-on-surface-variant mb-6 italic">"Erkey Motors bikes are tanks. We've seen significantly lower downtime compared to other electric models we've tried."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container" data-alt="Business executive profile." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuC583m42ELF52m-vtjloqurNgqwAsgF-7DGz_tcQzBCMZjKQ-pZfPMY8HfTbapqy-1OwNAEAbYwLrLm2ke4JFtzFsOPuwmGQ_kvmrqOjPwdtzuwpqbKjue-2VDY-ZgAaf30JDaJ8kDf5-Jb6W4bEtFRWt753cL0WGq8pQ6W_OnYoTd8XP_SyH9FT_tSbudy68N7FG6TWbpCys28LiHKEWzk8KJOWQ-QDncr7Iqg9kgFoKOgg_eQQZERfTeY0AWLPP1CbGKefmG0Z5Mc&quot;);"></div>
+<div>
+<h4 class="font-button-label">Sarah Collins</h4>
+<p class="text-caption text-outline">Operations Director, GreenPost</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-section-padding bg-surface-bright overflow-hidden" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-stretch">
+<div class="parallax-container relative min-h-[400px] rounded-3xl overflow-hidden shadow-xl reveal active">
+<div class="parallax-bg absolute -top-20 -bottom-20 left-0 right-0 bg-cover bg-center" data-alt="A wide, sweeping shot of a state-of-the-art electric vehicle research and development facility. Engineers in clean white lab coats are working on a prototype bike chassis. The environment is minimalist and clinical, with bright, cool lighting. Large glass windows reveal a futuristic city skyline. The style is inspired by modern automotive manufacturing plants like Tesla's Gigafactory." id="about-parallax" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDvk2MZox0X2CliD3301Q6vLSjwgAkkMDOM5ICdX0Ux9mBLfNexX9MTHFJqdNtoliGkAMxlRB1asRV2-Rzrr8J-PX7211JBgJ-3ijpG21oTTJt0pC2k1cajvbNM713zz-oBOd04StFDXPRjjeGQCQifbjHxj7CuLAhROblkMOOZfkcAiwYEVYbHSaiQhJxsS9xaknhw0YEaeaEmQElm46cZOrZ-9185M-Im-I6rH5ioKEtcwQpprrI1AxC138527Nqx8C5v_0hGI5ld&quot;);"></div>
+</div>
+<div class="flex flex-col justify-center reveal active" style="transition-delay: 200ms;">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-md">Redefining Movement</h2>
+<div class="space-y-stack-md">
+<div class="p-6 bg-white rounded-xl border-l-4 border-primary shadow-sm">
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Our Mission</h4>
+<p class="text-on-surface-variant font-body-md">To accelerate the world's transition to sustainable logistics through intelligent design and performance-driven hardware.</p>
+</div>
+<div class="p-6 bg-white rounded-xl border-l-4 border-primary shadow-sm">
+<h4 class="font-headline-md text-body-lg font-bold mb-1">R&amp;D Focused</h4>
+<p class="text-on-surface-variant font-body-md">With over 15 patents and 5 years of rigorous testing, we don't just build bikes; we build infrastructure for the future.</p>
+</div>
+<div class="p-6 bg-white rounded-xl border-l-4 border-primary shadow-sm">
+<h4 class="font-headline-md text-body-lg font-bold mb-1">Unmatched Quality</h4>
+<p class="text-on-surface-variant font-body-md">Every vehicle undergoes a 120-point quality check before it leaves our facility, ensuring fleet reliability you can bet on.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recognitions Section (Marquee) -->
+<section class="py-12 bg-white border-y border-surface-variant/20">
+<div class="marquee">
+<div class="marquee-content items-center">
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+<span class="font-headline-md whitespace-nowrap">Startup India Certified</span>
+</div>
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+<span class="font-headline-md whitespace-nowrap">National Innovation Award</span>
+</div>
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">gavel</span>
+<span class="font-headline-md whitespace-nowrap">15+ Registered Patents</span>
+</div>
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">public</span>
+<span class="font-headline-md whitespace-nowrap">Global Green Fleet Award</span>
+</div>
+<!-- Duplicate for seamless scroll -->
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+<span class="font-headline-md whitespace-nowrap">Startup India Certified</span>
+</div>
+<div class="flex items-center gap-4 text-outline opacity-50 grayscale hover:grayscale-0 transition-all cursor-default px-10">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+<span class="font-headline-md whitespace-nowrap">National Innovation Award</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Section -->
+<section class="py-section-padding bg-surface-bright" id="blog">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface reveal active">Latest News &amp; Insights</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto mt-stack-sm reveal active">Stay updated with the latest trends in fleet innovation and sustainable logistics.</p>
+</div>
+<div class="grid grid-cols-1 gap-gutter mb-stack-lg flex-col">
+<!-- Blog Card 1 -->
+<div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm border border-surface-variant/20 hover:shadow-xl transition-all reveal active md:flex-row">
+<div class="aspect-video bg-surface-container relative md:w-1/3"><img alt="The Future of Last-Mile Delivery" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFvI4P_0Eaf8uFe2ueddpFjJJfH5cHpBZX40jMmP80Mnil134kSTxmkJYJNovxveDSb2aaHTNCSH1Y0ZMAStSQZC75w9KvlaDTQ35utO8pFDFod8OjkfwG72oIuJxluAJNT2hIEScBVElRfN715TU0tyv_kKinpv8H20tQX51HhXvWzMRRhMqabIQqYxaX3EsUbdLT0F1U3oGPOUnGMIwCfA0FpdRo_QZ8AUcyMeemLTwWcEi4kuoXtTzM9nkm9Hld5wX-id66HFxW"><div class="absolute top-4 left-4 bg-primary text-white text-caption font-nav-label px-3 py-1 rounded-full uppercase tracking-widest">Industry</div></div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-body-lg font-bold mb-2">The Future of Last-Mile Delivery</h3>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">Exploring how autonomous systems and electric fleets are reshaping urban logistics landscapes.</p>
+<a class="text-primary font-button-label flex items-center gap-1 hover:gap-2 transition-all" href="#">
+            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Blog Card 2 -->
+<div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm border border-surface-variant/20 hover:shadow-xl transition-all reveal active md:flex-row" style="transition-delay: 100ms;">
+<div class="aspect-video bg-surface-container relative md:w-1/3"><img alt="Optimizing Fleet ROI" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa0hynDJYDpLRyoOrHJp4zElqm8e8I2Abo-kH96WzhA45hBo2nKmSg7fS10qngT7LlyNb7XOcKjYoskibSoEVJDw8GO4e_EIA0360O1QJ9H2VT2CLLFs0C2bSuG_ZLNqBQQbQKXT2fcF-gZu61XVXi89FygQLk_Htz-gn_fh8QAc31vxMPXYg132R2lUOjt8MoZTIOHqskSXT7Y5iP7NRPwCBItbNKlksuagnDcMJZO_-mcj8t72D-IDFB7Hn2K4Xqy7YRoHv-OgpA"><div class="absolute top-4 left-4 bg-primary text-white text-caption font-nav-label px-3 py-1 rounded-full uppercase tracking-widest">Innovation</div></div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-body-lg font-bold mb-2">Optimizing Fleet ROI with Electric Power</h3>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">A deep dive into the cost-saving potential of switching your commercial fleet to Erkey Motors.</p>
+<a class="text-primary font-button-label flex items-center gap-1 hover:gap-2 transition-all" href="#">
+            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Blog Card 3 -->
+<div class="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm border border-surface-variant/20 hover:shadow-xl transition-all reveal active md:flex-row" style="transition-delay: 200ms;">
+<div class="aspect-video bg-surface-container relative md:w-1/3"><img alt="Service Network Expansion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD61rxz_ksGMLGD4pNS3K_4ZOfhgtwMVw0KmMKQYSpYyavJHO7EPvmr3X0gC0WL5risgyko6AurAgSDKSpaZKYxEJazZ2gUNT8hRkXEkm5j3zlIQ6R_0mead3TCTcPUblgohuZsJ22Q_keVbaunKMzLKGy0xEVkUWQe2stzKNumV0dyYOVEaskls7Qy8KSDoYGZ2B-F5H4Xcmfakcdqvy61KRNkRPbe_df_jPkFJvIgK7pYWNglYGjSg9ElNpeQzi67chn_uCMnBMAE"><div class="absolute top-4 left-4 bg-primary text-white text-caption font-nav-label px-3 py-1 rounded-full uppercase tracking-widest">Sustainability</div></div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-body-lg font-bold mb-2">Erkey Motors Expands Service Network</h3>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">We are bringing our world-class maintenance and support closer to your operations across India.</p>
+<a class="text-primary font-button-label flex items-center gap-1 hover:gap-2 transition-all" href="#">
+            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex justify-center reveal active" style="transition-delay: 300ms;">
+<button class="primary-btn text-white px-10 py-4 rounded-full font-button-label text-button-label uppercase tracking-widest">
+        View All Posts
+      </button>
+</div>
+</div>
+</section><footer id="contact" class="bg-surface-container dark:bg-inverse-surface py-section-padding px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<div class="mb-stack-md"><div class="flex items-center gap-4"><img alt="Erkey Motors Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSIHcnqzNyujXQoVIHxSW-na5F5ieMrfWI534pMLMjahewXgZYgg6GkCsZTgi7ejiWixH5Gzqb0u7JMcG9_gEM0hqPwgCX5fTDOXzRVu1TgupN1SDL-u_8k0zRN9GwQRfzUmq6gmRB4uQUGsiJLOx8rViIicfOoF5J-4A-fSVtYZ8JyR5v-QbcVuGeeE2KMHsPjwiphXITvkTUW6ZRPZk-aXtZ54puiqwQlxovUoz9KWykQILQFLFINBu7ZgODHqaHB5xVs3O-qevZ"><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Erkey Motors</span></div></div>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-outline mb-stack-md">Engineering the next generation of last-mile electric mobility for commercial dominance.</p>
+<div class="flex gap-stack-md">
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-variant flex items-center justify-center hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-button-label text-on-surface mb-stack-md">Products</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Electric Scooters</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Delivery Bikes</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Charging Stations</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">IoT Platform</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button-label text-on-surface mb-stack-md">Company</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Fleet Solutions</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">R&amp;D Center</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button-label text-on-surface mb-stack-md">Support</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Service Centers</a></li>
+<li class=""><a class="text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Knowledge Base</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-stack-lg pt-stack-md border-t border-surface-variant/20 flex flex-col md:flex-row justify-between items-center text-caption font-caption text-outline">
+<p class="">© 2024 Erkey Motors. All rights reserved.</p>
+<div class="flex gap-gutter mt-stack-sm md:mt-0">
+<span class="">Designed for Efficiency</span>
+<span class="">Powered by Electric</span>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('main-header');
+            let lastScrollY = window.scrollY;
+
+            // Scroll listener for Hide/Show Header
+            const handleScroll = () => {
+                const currentScrollY = window.scrollY;
+
+                // Scrolled background effect
+                if (currentScrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Hide/Show logic
+                const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                
+                if (!prefersReducedMotion) {
+                    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                        // Scrolling down
+                        header.classList.add('nav-hidden');
+                    } else if (currentScrollY < lastScrollY) {
+                        // Scrolling up
+                        header.classList.remove('nav-hidden');
+                    }
+                }
+
+                lastScrollY = currentScrollY;
+            };
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+
+            // Intersection Observer for Scroll Animations
+            const revealCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            };
+
+            const revealObserver = new IntersectionObserver(revealCallback, {
+                threshold: 0.15
+            });
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                revealObserver.observe(el);
+            });
+
+            // Simple Parallax
+            const handleParallax = () => {
+                const parallaxBg = document.getElementById('about-parallax');
+                if (!parallaxBg) return;
+                const speed = 0.5;
+                const windowHeight = window.innerHeight;
+                const container = parallaxBg.parentElement;
+                const containerTop = container.getBoundingClientRect().top;
+                
+                if (containerTop < windowHeight && containerTop > -container.offsetHeight) {
+                    const yPos = -(containerTop * speed);
+                    parallaxBg.style.transform = `translateY(${yPos}px)`;
+                }
+            };
+            window.addEventListener('scroll', handleParallax, { passive: true });
+            handleParallax();
+
+            // Smooth Scrolling for Nav Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#') && href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 80,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Video overlay play logic
+            const grindVideo = document.getElementById('grind-video');
+            const videoOverlay = document.getElementById('video-overlay');
+            if (grindVideo && videoOverlay) {
+                videoOverlay.addEventListener('click', () => {
+                    grindVideo.play();
+                    grindVideo.setAttribute('controls', 'true');
+                    videoOverlay.classList.add('opacity-0', 'pointer-events-none');
+                });
+                // If user pauses the video or it ends, show overlay again
+                grindVideo.addEventListener('pause', () => {
+                    videoOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                    grindVideo.removeAttribute('controls');
+                });
+                grindVideo.addEventListener('ended', () => {
+                    videoOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                    grindVideo.removeAttribute('controls');
+                });
+            }
+        });
+    </script>
+
+
+
+
+</body></html>
